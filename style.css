@@ -1,0 +1,373 @@
+body {
+  margin: 0 auto;
+}
+h4 {
+  margin: 1em 0 0 1em;
+}
+
+/* task 3 */
+:root {
+  --oxfordBlue: #0b132b;
+  --logoColor: #a667f8;
+  --bloodred: #6b0504;
+  --richblack: #c200fb;
+  --main-bg-color: white;
+  --main-text-color: black;
+}
+.header {
+  width: 100%;
+  display: flex;
+  border-bottom: solid 2px var(--logoColor);
+  margin: 3vh 0 0;
+}
+.header .logo img {
+  border-radius: 50%;
+  background-color: var(--logoColor);
+}
+.header .logo {
+  width: 50%;
+  display: flex;
+  gap: 1em;
+  color: var(--richblack);
+}
+.nav a {
+  text-decoration: none;
+  color: var(--oxfordBlue);
+}
+.nav a:hover {
+  color: var(--bloodred);
+}
+.nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    display: unset;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    margin-left: 1.5em;
+  }
+  .nav p {
+    text-align: left;
+  }
+  .header-content {
+    flex-direction: column;
+  }
+}
+
+/* task 1 */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+.task1 {
+  font-family: "Montserrat", sans-serif;
+  background-color: beige;
+  height: 25rem;
+}
+.header-content {
+  width: 100%;
+  display: flex;
+  height: 80vh;
+  margin-top: 7vh;
+}
+.header-content .headline {
+  width: 50%;
+  padding: 1rem;
+  line-height: 1.2rem;
+}
+.header-content .headline h4 {
+  line-height: 1.3em;
+  padding-top: 2em;
+}
+.header-content .headline p {
+  line-height: 1.5em;
+  font-size: 0.9rem;
+  line-break: strict;
+  text-align: justify;
+  text-justify: auto;
+}
+.header-content .headline .tab {
+  margin-left: 40px;
+}
+.header-content .header-image {
+  padding: 2rem 0 0 6rem;
+}
+.headline #read-more-btn {
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding: 0.5em 0.6em 0.5em 0.6em;
+  border-radius: 0.4rem;
+  border: none;
+  background-color: rgb(227, 208, 249);
+  color: rgb(70, 68, 71);
+  cursor: pointer;
+}
+
+/* task 2 */
+.task2 {
+  margin: 0 0 3em 1.5em;
+  width: 100%;
+}
+.task2 h1 {
+  text-align: center;
+}
+.task2 .container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.product-card {
+  width: 80%;
+  padding: 0.8em;
+  border: 1px solid black;
+  border-radius: 0.8rem;
+  box-shadow: 8px 10px 8px 0px rgba(0, 0, 0, 0.276);
+}
+.product-card img {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+.task2 button {
+  width: 70%;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* task 4 */
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  width: 95%;
+  gap: 5%;
+}
+.blog-card {
+  border: 1px solid red;
+  width: 92%;
+  padding: 1em;
+  text-align: justify;
+  text-justify: auto;
+}
+.blog-card img {
+  width: 100%;
+}
+.blog-card a {
+  text-decoration: none;
+  float: right;
+  margin-right: 1em;
+}
+@media only screen and (max-width: 600px) {
+  .blog-container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 600px;
+    margin: 0 0 0 1.5em;
+  }
+  .task4 {
+    margin-bottom: 10em;
+  }
+  .theme {
+    position: absolute;
+    top: 1.5em;
+    right: 1em;
+  }
+}
+
+/* task 5 */
+.task5 {
+  margin: 5% auto;
+  border: 1px solid gray;
+  width: 40%;
+  font-size: 1em;
+}
+.task5 h1 {
+  text-align: center;
+}
+.task5 form {
+  padding: 1em;
+}
+.task5 fieldset {
+  border: none;
+}
+.task5 label {
+  display: block;
+}
+.task5 input {
+  width: 100%;
+  font-size: 1.1em;
+}
+.task5 select {
+  font-size: 1em;
+  width: 25%;
+  text-align: center;
+}
+.task5 #terms-and-conditions {
+  width: unset;
+  vertical-align: middle;
+}
+.task5 a {
+  text-decoration: none;
+  color: black;
+}
+.task5 .tandc,
+button {
+  text-align: center;
+}
+.task5 button {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  font-size: 1rem;
+  margin-top: 13px;
+}
+
+/* task 6 */
+.task6-container {
+  height: 300px;
+  background: linear-gradient(#c9cad9, #d1d2f9, #a3bcf9, #7796cb, #7796cb);
+}
+.task6 #overlay {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 45%;
+  font-size: 1.5em;
+  display: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+.task6 button {
+  width: 10%;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 4px;
+  margin-left: 5%;
+}
+
+/* task 7 */
+.task7 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.task7 .button {
+  padding: 1.1em;
+  text-align: center;
+  border-radius: 6%;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: #a3bcf9;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+.task7 .button:hover {
+  background-color: #a667f8;
+  transition: 2s ease;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* task 8 */
+.task8 {
+  margin: 0 auto 1em auto;
+  width: 50%;
+}
+.task8 h1 {
+  text-align: center;
+}
+.task8 input {
+  display: block;
+  line-height: 1.5em;
+  font-size: 1em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.task8 #checkbox {
+  display: unset;
+  width: unset;
+}
+.task8 .pseudo-class {
+  margin-left: 20%;
+  margin-right: 20%;
+  display: inline-block;
+  width: 60%;
+}
+.task8 a:hover {
+  color: black;
+}
+.task8 a:active {
+  color: orange;
+}
+.task8 a:visited {
+  color: darkred;
+}
+
+/* task 9 */
+.task9 .theme {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  margin: 0.5em;
+  background-color: skyblue;
+  color: yellow;
+  display: flex;
+  justify-self: end;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.task9 .bi {
+  position: relative;
+  font-size: 1.8em;
+  left: 2%;
+}
+.darktheme {
+  background-color: var(--main-text-color);
+  color: var(--main-bg-color);
+}
+.darktheme a {
+  color: var(--main-bg-color);
+}
+.darktheme .task1 {
+  color: var(--main-text-color);
+}
+.darktheme .bi-moon-fill {
+  color: var(--main-bg-color);
+}
+/* Task 10 */
+@media print {
+  .task2,
+  .headline,
+  .task6,
+  .task7,
+  h4 {
+    display: none !important;
+  }
+  body {
+    background-color: white;
+    color: black;
+    font-size: 12px;
+  }
+}
+.task10 button {
+  text-align: center;
+  margin: 0 auto 1em auto;
+  width: 10%;
+  font-size: 1rem;
+  padding: 5px;
+}
